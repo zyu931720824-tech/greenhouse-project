@@ -78,6 +78,9 @@ function Header() {
               <p className='text-sm font-medium text-slate-500 dark:text-slate-400'>
                 Alex JohnSon
               </p>
+              <p className='text-xs text-slate-500 dark:text-slate-400'>
+                Administrator
+              </p>
             </div>
             <ChevronDown className='w-4 h4 text-slate-400'></ChevronDown>
           </div>
