@@ -1,90 +1,67 @@
 import {
-  BarChart3,
-  Calendar,
-  CreditCard,
+  Thermometer,
   FileText,
   LayoutDashboard,
-  MessageSquare,
-  Package,
   Settings,
-  ShoppingBag,
-  Users,
+  CircleAlert ,
   Zap,
   ChevronDown,
+  ChartLine,
 } from "lucide-react";
 import React, { useState } from "react";
 
 const menuItems = [
   {
-    id: "dashboard",
+    id: "sensor-dashboard",
     icon: LayoutDashboard,
-    label: "Dashboard",
+    label: "传感器总览",
     active: true,
-    badge: "New",
+    badge: "5个在线",
   },
   {
-    id: "analytics",
-    icon: BarChart3,
-    label: "Analytics",
+    id: "environmental-sensors",
+    icon: Thermometer,
+    label: "环境传感器",
     submenu: [
-      { id: "overview", label: "Overview" },
-      { id: "reports", label: "Reports" },
-      { id: "insights", label: "Insights" },
+      { id: "temp-humidity", label: "温湿度传感器" },
+      { id: "soil-moisture", label: "土壤湿度传感器" },
+      { id: "water-level", label: "水位传感器" },
+      { id: "light-sensor", label: "光照传感器" },
+      { id: "co2-sensor", label: "二氧化碳传感器" },
     ],
   },
   {
-    id: "user",
-    icon: Users,
-    label: "Users",
-    count: "2.4k",
+    id: "sensor-data",
+    icon: ChartLine,
+    label: "传感器数据",
     submenu: [
-      { id: "all-users", label: "All Users" },
-      { id: "roles", label: "Roles & Permissions" },
-      { id: "activity", label: "User Activity" },
+      { id: "real-time", label: "实时数据" },
+      { id: "history", label: "历史记录" },
+      { id: "trends", label: "数据趋势" },
     ],
   },
   {
-    id: "ecommerce",
-    icon: ShoppingBag,
-    label: "E-commerce",
+    id: "alerts",
+    icon: CircleAlert ,
+    label: "传感器警报",
+    badge: "3条未读",
+  },
+  {
+    id: "sensor-settings",
+    icon: Settings,
+    label: "传感器设置",
     submenu: [
-      { id: "products", label: "Products" },
-      { id: "orders", label: "Orders" },
-      { id: "customers", label: "Customers" },
-    ],
-  },
-  {
-    id: "inventory",
-    icon: Package,
-    label: "Inventory",
-    count: "847",
-  },
-  {
-    id: "transactions",
-    icon: CreditCard,
-    label: "Transactions",
-  },
-  {
-    id: "messages",
-    icon: MessageSquare,
-    label: "Messages",
-    badge: "12",
-  },
-  {
-    id: "calendar",
-    icon: Calendar,
-    label: "Calendar",
+      { id: "calibration", label: "传感器校准" },
+      { id: "thresholds", label: "警报阈值" },
+      { id: "connection", label: "连接状态" },
+    ]
   },
   {
     id: "reports",
     icon: FileText,
-    label: "Reports",
-  },
-  {
-    id: "settings",
-    icon: Settings,
-    label: "Settings",
-  },
+    label: "传感器报表",
+  }
+  
 ];
 
 function Sidebar({ collapsed, onToggle, currentPage, onPageChange }) {
