@@ -1,15 +1,15 @@
 import React from 'react'
-import RevenueChart from './RevenueChart'
-import SalesChart from './SalesChart'
+import SoilMoistureChart from './SoilMoistureChart'
+import LuminosityTrend from './LuminosityTrend'
 
 function ChartSection() {
   return (
     <div className='grid grid-col-1 xl:grid-cols-3 gap-6'>
         <div className='xl:col-span-2'>
-            <RevenueChart />
+            <SoilMoistureChart />
         </div>
         <div className='space-y-6'>
-          <SalesChart />
+          <LuminosityTrend />
         </div>
     </div>
   )

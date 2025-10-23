@@ -21,6 +21,8 @@ const data = [
   { time: '14:00', temperature: 31, humidity: 54 },
 ];
 
+
+
 function TemperatureHumidity() {
   return (
     <div className="space-y-6">
