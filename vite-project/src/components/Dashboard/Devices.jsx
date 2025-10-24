@@ -43,15 +43,7 @@ function DeviceStatsGrid() {
                 <p className="text-3xl text-slate-800 dark:text-white mb-2">
                   {device.count}
                 </p>
-                {/* <div className="flex items-center space-x-1 mb-2">
-                  {trendIcon}
-                  <span className={`text-sm font-semibold ${changeColor}`}>
-                    {Math.abs(device.change)} {trendUp ? "增加" : "减少"}
-                  </span>
-                  <span className="text-sm text-slate-500 dark:text-slate-400">
-                    vs 上次
-                  </span>
-                </div> */}
+                
                 <div className="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
                   <div
                     className={`bg-gradient-to-r from-blue-500 to-green-400 h-full transition-all`}
