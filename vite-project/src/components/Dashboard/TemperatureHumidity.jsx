@@ -27,7 +27,7 @@ function TemperatureHumidity() {
   return (
     <div className="space-y-6">
       {/* Title Section */}
-      <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-b-2xl border border-slate-200/50 dark:border-slate-700/50 overflow-hidden">
+      <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-2xl border border-slate-200/50 dark:border-slate-700/50 overflow-hidden">
         <div className="p-6 border-b border-slate-200/50 dark:border-slate-700/50 flex items-center justify-between">
           <div>
             <h3 className="text-lg font-bold text-slate-800 dark:text-white">
