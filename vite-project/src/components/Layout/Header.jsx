@@ -20,7 +20,7 @@ function Header({ sideBarCollapsed, onToggleSidebar }) {
               监测大屏
             </h1>
             <p className='text-slate-500 dark:text-slate-400'>
-              欢迎回来Alex，看看今天有什么发现
+              欢迎回来红叶，看看今天有什么发现
             </p>
           </div>
         </div>
@@ -45,16 +45,8 @@ function Header({ sideBarCollapsed, onToggleSidebar }) {
           {/* Quick Action */}
           <button className='hidden lg:flex items-center space-x-2 py-2 px-4 bg-gradient-to-r from-blue-500 to-green-300 text-white rounded-xl hover:shadow-lg transition-all'>
             <Plus className='w-4 h-4' />
-            <span className='text-sm font-medium'>New</span>
+            <span className='text-sm font-medium'>添加</span>
           </button>
-
-          {/* Dark Mode Toggle
-          <button
-            className='p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors'
-            onClick={() => setIsDarkMode(!isDarkMode)}
-          >
-            {isDarkMode ? <Sun className='w-5 h-5' /> : <Moon className='w-5 h-5' />}
-          </button> */}
 
           {/* Notification */}
           <button className='relative p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors'>
@@ -77,8 +69,8 @@ function Header({ sideBarCollapsed, onToggleSidebar }) {
               className='w-8 h-8 rounded-full ring-2 ring-blue-500'
             />
             <div className='hidden md:block'>
-              <p className='text-sm font-medium text-slate-500 dark:text-slate-400'>Alex JohnSon</p>
-              <p className='text-xs text-slate-500 dark:text-slate-400'>Administrator</p>
+              <p className='text-sm font-medium text-slate-500 dark:text-slate-400'>红叶</p>
+              <p className='text-xs text-slate-500 dark:text-slate-400'>管理员</p>
             </div>
             <ChevronDown className='w-4 h-4 text-slate-400' />
           </div>

@@ -35,7 +35,7 @@ function SoilMoistureChart() {
           <div className='flex items-center space-x-2'>
             <div className='w-3 h-3 bg-gradient-to-r from-green-400 to-blue-400 rounded-full'></div>
             <div className='text-sm text-slate-600 dark:text-slate-400'>
-              Moisture
+              湿度
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
+// 数据部分仍然用普通 co2（变量名不能带下标）
 const co2Data = [
   { time: '08:00', co2: 400 },
   { time: '09:00', co2: 420 },
@@ -21,7 +23,7 @@ function CO2Chart() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-xl font-bold text-slate-800 dark:text-white">
-            CO₂浓度 / CO₂ Concentration 
+            CO₂浓度 / CO₂ Concentration
           </h3>
           <p className="text-sm text-slate-500 dark:text-slate-400">
             空气中二氧化碳浓度变化 / CO₂ concentration in air (ppm)
@@ -48,7 +50,7 @@ function CO2Chart() {
               }}
               formatter={(value) => [`${value} ppm`, 'CO₂']}
             />
-            <Legend />
+            <Legend formatter={() => "CO₂"} />
             <Line 
               type="monotone" 
               dataKey="co2" 
@@ -56,6 +58,7 @@ function CO2Chart() {
               strokeWidth={3} 
               activeDot={{ r: 6 }}
               dot={{ r: 3 }}
+              name="CO₂"
             />
           </LineChart>
         </ResponsiveContainer>
@@ -65,3 +68,4 @@ function CO2Chart() {
 }
 
 export default CO2Chart;
+

@@ -177,10 +177,10 @@ function Sidebar({ collapsed, onToggle, currentPage, onPageChange }) {
           {!collapsed && (
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium text-slate-800 dark:text-white truncate">
-                Alex Johnson
+                红叶
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400 truncate">
-                Administrator
+                管理员
               </p>
             </div>
           )}
