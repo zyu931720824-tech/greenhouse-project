@@ -31,14 +31,14 @@ function TemperatureHumidity() {
         <div className="p-6 border-b border-slate-200/50 dark:border-slate-700/50 flex items-center justify-between">
           <div>
             <h3 className="text-lg font-bold text-slate-800 dark:text-white">
-              温度与空气湿度（Temperature & Humidity）
+              温度与空气湿度
             </h3>
             <p className="text-sm text-slate-500 dark:text-slate-400">
-              实时监测大棚空气状况 / Real-time greenhouse air conditions
+              实时监测大棚空气状况
             </p>
           </div>
           <button className="text-blue-600 hover:text-blue-700 text-sm font-medium">
-            查看全部 / View All
+            查看全部
           </button>
         </div>
 
@@ -74,8 +74,8 @@ function TemperatureHumidity() {
               />
               <Tooltip
                 formatter={(value, name) => {
-                  if (name === 'temperature') return [`${value} °C`, '温度 Temperature'];
-                  if (name === 'humidity') return [`${value} %`, '湿度 Humidity'];
+                  if (name === 'temperature') return [`${value} °C`, '温度'];
+                  if (name === 'humidity') return [`${value} %`, '湿度'];
                   return value;
                 }}
               />
@@ -86,14 +86,14 @@ function TemperatureHumidity() {
                 dataKey="temperature"
                 stroke="#8884d8"
                 activeDot={{ r: 8 }}
-                name="温度 Temperature"
+                name="温度"
               />
               <Line
                 yAxisId="right"
                 type="monotone"
                 dataKey="humidity"
                 stroke="#82ca9d"
-                name="湿度 Humidity"
+                name="湿度"
               />
             </LineChart>
           </ResponsiveContainer>

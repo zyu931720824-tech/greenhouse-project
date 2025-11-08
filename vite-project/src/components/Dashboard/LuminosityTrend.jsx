@@ -4,10 +4,10 @@ import React from 'react'
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts'
 
 const lightIntensityData = [
-  { name: '低光 / Low (0-200 Lux)', value: 20, color: '#fde68a' },
-  { name: '中光 / Medium (200-500 Lux)', value: 50, color: '#facc15' },
-  { name: '高光 / High (500-800 Lux)', value: 20, color: '#f59e0b' },
-  { name: '强光 / Very High (800+ Lux)', value: 10, color: '#b45309' },
+  { name: '低光 /(0-200 Lux)', value: 20, color: '#fde68a' },
+  { name: '中光 /(200-500 Lux)', value: 50, color: '#facc15' },
+  { name: '高光 /(500-800 Lux)', value: 20, color: '#f59e0b' },
+  { name: '强光 /(800+ Lux)', value: 10, color: '#b45309' },
 ];
 
 function LightIntensityChart() {
@@ -15,7 +15,7 @@ function LightIntensityChart() {
     <div className="bg-white dark:bg-slate-900 backdrop-blur-xl rounded-2xl p-6 border border-slate-200/50 dark:border-slate-700/50">
       <div className="mb-6">
         <h3 className="text-lg font-bold text-slate-800 dark:text-white">
-          光照强度 / Light Intensity
+          光照强度
         </h3>
         <p className="text-sm text-slate-500 dark:text-slate-400">
           当前光照强度分布

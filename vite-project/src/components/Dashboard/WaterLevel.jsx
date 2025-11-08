@@ -2,11 +2,11 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const waterLevelData = [
-  { tank: 'A区水槽 / Tank A', level: 75 },
-  { tank: 'B区水槽 / Tank B', level: 68 },
-  { tank: 'C区水槽 / Tank C', level: 82 },
-  { tank: 'D区水槽 / Tank D', level: 70 },
-  { tank: 'E区水槽 / Tank E', level: 60 },
+  { tank: 'A区水槽', level: 75 },
+  { tank: 'B区水槽', level: 68 },
+  { tank: 'C区水槽', level: 82 },
+  { tank: 'D区水槽', level: 70 },
+  { tank: 'E区水槽', level: 60 },
 ];
 
 function WaterLevelChart() {
@@ -17,17 +17,17 @@ function WaterLevelChart() {
       <div className='flex items-center justify-between mb-6'>
         <div>
           <h3 className='text-xl font-bold text-slate-800 dark:text-white'>
-            水位对比 / Water Level
+            水位对比 
           </h3>
           <p className='text-sm text-slate-500 dark:text-slate-400'>
-            各水槽/区域水位百分比 / Water level (%) by Tank/Area
+            各水槽/区域水位百分比
           </p>
         </div>
         <div className='flex items-center space-x-4'>
           <div className='flex items-center space-x-2'>
             <div className='w-3 h-3 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full'></div>
             <div className='text-sm text-slate-600 dark:text-slate-400'>
-              Water Level
+              水位
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ function WaterLevelChart() {
                 borderRadius:"12px",
                 boxShadow:"0 10px 40px rgba(0,0,0,0.1)",
               }}
-              formatter={(value) => [`${value}%`, 'Water Level']}
+              formatter={(value) => [`${value}%`, '水位']}
             />
             <Bar 
               dataKey="level" 

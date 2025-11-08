@@ -23,10 +23,10 @@ function CO2Chart() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-xl font-bold text-slate-800 dark:text-white">
-            CO₂浓度 / CO₂ Concentration
+            CO₂浓度 
           </h3>
           <p className="text-sm text-slate-500 dark:text-slate-400">
-            空气中二氧化碳浓度变化 / CO₂ concentration in air (ppm)
+            空气中二氧化碳浓度变化 (ppm)
           </p>
         </div>
       </div>

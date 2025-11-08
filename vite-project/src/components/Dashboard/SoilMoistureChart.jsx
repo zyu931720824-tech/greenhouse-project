@@ -12,12 +12,12 @@ import {
 
 function SoilMoistureChart() {
   const soilMoistureData = [
-    { sensor: 'A区传感器1 / Sensor A1', moisture: 62 },
-    { sensor: 'A区传感器2 / Sensor A2', moisture: 59 },
-    { sensor: 'B区传感器1 / Sensor B1', moisture: 67 },
-    { sensor: 'B区传感器2 / Sensor B2', moisture: 64 },
-    { sensor: 'C区传感器1 / Sensor C1', moisture: 71 },
-    { sensor: 'C区传感器2 / Sensor C2', moisture: 68 },
+    { sensor: 'A区传感器1', moisture: 62 },
+    { sensor: 'A区传感器2', moisture: 59 },
+    { sensor: 'B区传感器1', moisture: 67 },
+    { sensor: 'B区传感器2', moisture: 64 },
+    { sensor: 'C区传感器1', moisture: 71 },
+    { sensor: 'C区传感器2', moisture: 68 },
   ];
 
   return (
@@ -26,9 +26,9 @@ function SoilMoistureChart() {
       {/* Header */}
       <div className='flex items-center justify-between mb-6'>
         <div>
-          <h3 className='text-xl font-bold text-slate-800 dark:text-white'>土壤湿度 / Soil Moisture</h3>
+          <h3 className='text-xl font-bold text-slate-800 dark:text-white'>土壤湿度</h3>
           <p className='text-sm text-slate-500 dark:text-slate-400'>
-            各区域土壤湿度百分比 / Soil Moisture (%) by Sensor
+            各区域土壤湿度百分比 (%) 
           </p>
         </div>
         <div className='flex items-center space-x-4'>
@@ -70,7 +70,7 @@ function SoilMoistureChart() {
                 borderRadius:"12px",
                 boxShadow:"0 10px 40px rgba(0,0,0,0.1)",
               }}
-              formatter={(value) => [`${value}%`, 'Moisture']}
+              formatter={(value) => [`${value}%`, '湿度']}
             />
             <Bar 
               dataKey="moisture"
